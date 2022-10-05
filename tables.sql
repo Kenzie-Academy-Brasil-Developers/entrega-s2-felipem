@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS endereços(
   rua VARCHAR(50) NOT NULL,
   numero INTEGER NOT NULL,
   bairro VARCHAR(50) NOT NULL,
-  complemento VARCHAR(100) NOT NULL,
+  complemento VARCHAR(100),
   cliente_id INTEGER NOT NULL,
   CONSTRAINT fk_end_end FOREIGN KEY(cliente_id) REFERENCES clientes(id)
 );
